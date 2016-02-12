@@ -3,18 +3,18 @@ angular.module('journalize', ['ui.router']).config(function ($stateProvider, $ur
     $stateProvider
         .state('login', {
             url: '/',
-            templateUrl: './templates/mainTmpl.html',
-            controller: 'loginCtrl',
+            templateUrl: './features/login/loginTmpl.html',
+            controller: 'userCtrl as user',
         })
 
-        .state('', {
+        .state('user', {
             url: '/user/:id',
             templateUrl: './features/user/userTmpl.html',
-            controller: 'userCtrl',
+            controller: 'userCtrl as user',
         })
 
     $urlRouterProvider
-        .otherwise('/login');
+        .otherwise('/');
 
 
 
