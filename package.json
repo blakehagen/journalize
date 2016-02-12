@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/blakehagen/journalize/issues"
   },
-  "homepage": "https://github.com/blakehagen/journalize"
+  "homepage": "https://github.com/blakehagen/journalize",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "mongoose": "^4.4.3",
+    "passport": "^0.3.2"
+  }
 }
