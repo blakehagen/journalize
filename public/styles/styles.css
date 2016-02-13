@@ -35,10 +35,10 @@ body {
         position: absolute;
         background: url("../assets/macbook-air-paper-compressor.jpg") no-repeat center center;;
         background-size: cover;  
-        -webkit-transition: opacity 1s ease-in-out;
-        -moz-transition: opacity 1s ease-in-out;
-        -o-transition: opacity 1s ease-in-out;
-        transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 3s ease-in-out;
+        -moz-transition: opacity 3s ease-in-out;
+        -o-transition: opacity 3s ease-in-out;
+        transition: opacity 3s ease-in-out;
     }
     
     .img-2 {
@@ -48,10 +48,10 @@ body {
         background: url("../assets/photography-notes-book-glasses-pencil-compressor.jpg") no-repeat center center;
         background-size: cover;
         
-        -webkit-transition: opacity 1s ease-in-out;
-        -moz-transition: opacity 1s ease-in-out;
-        -o-transition: opacity 1s ease-in-out;
-        transition: opacity 1s ease-in-out;
+        -webkit-transition: opacity 3s ease-in-out;
+        -moz-transition: opacity 3s ease-in-out;
+        -o-transition: opacity 3s ease-in-out;
+        transition: opacity 3s ease-in-out;
         
         animation-name: backgroundImgFader;
         animation-timing-function: ease-in-out;
