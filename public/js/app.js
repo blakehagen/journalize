@@ -17,10 +17,5 @@ angular.module('journalize', ['ui.router']).config(function ($stateProvider, $ur
         .otherwise('/');
 
 
-
-
-
-
-
 });
 
