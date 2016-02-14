@@ -12,7 +12,6 @@ body {
     margin: 0;
     height: 100%;
     width: 100%;
-    /*border: 1px solid red;*/
 }
 
 /*header {
@@ -22,61 +21,157 @@ body {
 }*/
 
 /* LANDING PAGE / LOGIN */
+
 .landing-background {
     height: 100%;
     width: 100%;
     position: relative; 
     background: #000;
 } 
-      
-    .img-1 {
+
+    .landing-background div {
         height: 100%;
         width: 100%;
         position: absolute;
-        background: url("../assets/macbook-air-paper-compressor.jpg") no-repeat center center;;
+        left: 0;
+        top: 0;
+    }
+      
+    .img-4 {
+        background: url("../assets/stars-compressor.jpg") no-repeat center center;;
         background-size: cover;  
-        -webkit-transition: opacity 3s ease-in-out;
-        -moz-transition: opacity 3s ease-in-out;
-        -o-transition: opacity 3s ease-in-out;
-        transition: opacity 3s ease-in-out;
+    }
+    
+    .img-3 {
+      
+        background: url("../assets/beach-compressor.jpg") no-repeat center center;
+        background-size: cover;
     }
     
     .img-2 {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        background: url("../assets/photography-notes-book-glasses-pencil-compressor.jpg") no-repeat center center;
-        background-size: cover;
-        
-        -webkit-transition: opacity 3s ease-in-out;
-        -moz-transition: opacity 3s ease-in-out;
-        -o-transition: opacity 3s ease-in-out;
-        transition: opacity 3s ease-in-out;
-        
-        animation-name: backgroundImgFader;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-        animation-duration: 10s;
-        animation-direction: alternate;
+        background: url("/assets/highway-time-lapse-compressor.jpg") no-repeat center center;
     }
     
-    /*.img-3 {
-        background: url("../assets/macbook-air-paper-compressor.jpg") no-repeat center center;
-    }*/
+    .img-1 {
+        background: url("/assets/woods-trail-compressor.jpg") no-repeat center center;
+    }
 
-/* * * * * * * * * */
+/* Multiple Images FadeIn/FadeOut */
 
-  @keyframes backgroundImgFader {
-  0% {
-  opacity:1;
-    }
-    45% {
-    opacity:1;
-    }
-    55% {
-    opacity:0;
-    }
-    100% {
-    opacity:0;
-    }
+@-webkit-keyframes backgroundImgFader {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-moz-keyframes backgroundImgFader {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@-o-keyframes backgroundImgFader {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+@keyframes backgroundImgFader {
+ 0% {
+   opacity:1;
+ }
+ 17% {
+   opacity:1;
+ }
+ 25% {
+   opacity:0;
+ }
+ 92% {
+   opacity:0;
+ }
+ 100% {
+   opacity:1;
+ }
+}
+
+.landing-background div {
+  -webkit-animation-name: backgroundImgFader;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 16s;
+
+  -moz-animation-name: backgroundImgFader;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 16s;
+
+  -o-animation-name: backgroundImgFader;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+  -o-animation-duration: 16s;
+
+  animation-name: backgroundImgFader;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 16s;
+}
+.landing-background div:nth-of-type(1) {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.landing-background div:nth-of-type(2) {
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  -o-animation-delay: 8s;
+  animation-delay: 8s;
+}
+.landing-background div:nth-of-type(3) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.landing-background div:nth-of-type(4) {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay: 0;
+  animation-delay: 0;
 }
