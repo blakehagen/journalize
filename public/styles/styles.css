@@ -14,22 +14,13 @@ body {
     width: 100%;
 }
 
-/*header {
-    width: 100%;
-    height: 80px;
-    border-bottom: 1px solid black;
-}*/
-
 /* LANDING PAGE / LOGIN */
 
 .landing-background {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: relative; 
     background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 } 
 
     .landing-background div {
@@ -46,24 +37,23 @@ body {
     }
     
     .img-3 {
-      
         background: url("../assets/beach-compressor.jpg") no-repeat center center;
         background-size: cover;
     }
     
     .img-2 {
         background: url("/assets/highway-time-lapse-compressor.jpg") no-repeat center center;
+        background-size: cover;
     }
     
     .img-1 {
         background: url("/assets/woods-trail-compressor.jpg") no-repeat center center;
+         background-size: cover;
     }
     
 .title-box {
-    /*border: 1px solid white;*/
-    /*width: 100px;*/
-    /*height: 100px;*/
     z-index: 9999;
+    text-align: center;
 }
 
     .title-box h1 {
@@ -72,119 +62,127 @@ body {
         color: #FFF;
         font-size: 68px;
     }
+    
+    .title-box h5 {
+        margin: -10px 0 0 0;
+        font-family: 'Nothing You Could Do', 'Open Sans', sans-serif;
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 100;
+    }
 
 /* Multiple Images FadeIn/FadeOut */
 
 @-webkit-keyframes backgroundImgFader {
- 0% {
-   opacity:1;
- }
- 17% {
-   opacity:1;
- }
- 25% {
-   opacity:0;
- }
- 92% {
-   opacity:0;
- }
- 100% {
-   opacity:1;
- }
+    0% {
+    opacity:1;
+    }
+    17% {
+    opacity:1;
+    }
+    25% {
+    opacity:0;
+    }
+    92% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
 }
 
 @-moz-keyframes backgroundImgFader {
- 0% {
-   opacity:1;
- }
- 17% {
-   opacity:1;
- }
- 25% {
-   opacity:0;
- }
- 92% {
-   opacity:0;
- }
- 100% {
-   opacity:1;
- }
+    0% {
+    opacity:1;
+    }
+    17% {
+    opacity:1;
+    }
+    25% {
+    opacity:0;
+    }
+    92% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
 }
 
 @-o-keyframes backgroundImgFader {
- 0% {
-   opacity:1;
- }
- 17% {
-   opacity:1;
- }
- 25% {
-   opacity:0;
- }
- 92% {
-   opacity:0;
- }
- 100% {
-   opacity:1;
- }
+    0% {
+    opacity:1;
+    }
+    17% {
+    opacity:1;
+    }
+    25% {
+    opacity:0;
+    }
+    92% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
 }
 
 @keyframes backgroundImgFader {
- 0% {
-   opacity:1;
- }
- 17% {
-   opacity:1;
- }
- 25% {
-   opacity:0;
- }
- 92% {
-   opacity:0;
- }
- 100% {
-   opacity:1;
- }
+    0% {
+    opacity:1;
+    }
+    17% {
+    opacity:1;
+    }
+    25% {
+    opacity:0;
+    }
+    92% {
+    opacity:0;
+    }
+    100% {
+    opacity:1;
+    }
 }
 
 .landing-background div {
   -webkit-animation-name: backgroundImgFader;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 16s;
+  -webkit-animation-duration: 32s;
 
   -moz-animation-name: backgroundImgFader;
   -moz-animation-timing-function: ease-in-out;
   -moz-animation-iteration-count: infinite;
-  -moz-animation-duration: 16s;
+  -moz-animation-duration: 32s;
 
   -o-animation-name: backgroundImgFader;
   -o-animation-timing-function: ease-in-out;
   -o-animation-iteration-count: infinite;
-  -o-animation-duration: 16s;
+  -o-animation-duration: 32s;
 
   animation-name: backgroundImgFader;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 16s;
+  animation-duration: 32s;
 }
 .landing-background div:nth-of-type(1) {
-  -webkit-animation-delay: 12s;
-  -moz-animation-delay: 12s;
-  -o-animation-delay: 12s;
-  animation-delay: 12s;
+  -webkit-animation-delay: 24s;
+  -moz-animation-delay: 24s;
+  -o-animation-delay: 24s;
+  animation-delay: 24s;
 }
 .landing-background div:nth-of-type(2) {
+  -webkit-animation-delay: 16s;
+  -moz-animation-delay: 16s;
+  -o-animation-delay: 16s;
+  animation-delay: 16s;
+}
+.landing-background div:nth-of-type(3) {
   -webkit-animation-delay: 8s;
   -moz-animation-delay: 8s;
   -o-animation-delay: 8s;
   animation-delay: 8s;
-}
-.landing-background div:nth-of-type(3) {
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  -o-animation-delay: 4s;
-  animation-delay: 4s;
 }
 .landing-background div:nth-of-type(4) {
   -webkit-animation-delay: 0;
@@ -194,3 +192,38 @@ body {
 }
 
 /* * * * * * * * * */
+
+.landing-wrap-parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    -webkit-perspective: 1px;
+}
+
+.parallax_layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax_layer_base {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax_layer_back { 
+    transform: translateZ(-1px) scale(2); 
+}
+
+.content {
+    margin-top: 100vh;
+    width: 100%;
+    height: 65vh;
+    background-color: white;
+}
