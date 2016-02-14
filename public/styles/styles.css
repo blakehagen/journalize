@@ -27,6 +27,9 @@ body {
     width: 100%;
     position: relative; 
     background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
     .landing-background div {
@@ -54,6 +57,20 @@ body {
     
     .img-1 {
         background: url("/assets/woods-trail-compressor.jpg") no-repeat center center;
+    }
+    
+.title-box {
+    /*border: 1px solid white;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    z-index: 9999;
+}
+
+    .title-box h1 {
+        margin: 0;
+        font-family: 'Nothing You Could Do', 'Open Sans', sans-serif;
+        color: #FFF;
+        font-size: 68px;
     }
 
 /* Multiple Images FadeIn/FadeOut */
@@ -175,3 +192,5 @@ body {
   -o-animation-delay: 0;
   animation-delay: 0;
 }
+
+/* * * * * * * * * */
