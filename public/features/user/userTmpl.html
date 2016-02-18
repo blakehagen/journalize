@@ -1,3 +1,18 @@
 <header class="dashboard">
-    {{user.user.name}}
+
+    <div class="user-img">
+        <img ng-src="{{user.user.image}}">
+    </div>
+    <div class="user-info">
+        <div class="row">
+            <h4>Journalize</h4>
+        </div>
+        <div class="row">
+        <p>Hi, {{user.user.name}}</p>
+        </div>
+
+    </div>
+
+
+
 </header>
