@@ -1,21 +1,27 @@
-angular.module('journalize', ['ui.router']).config(function ($stateProvider, $urlRouterProvider) {
+var baseUrl = 'http://localhost:3030/api/v1/';
 
-    $stateProvider
-        .state('login', {
-            url: '/',
-            templateUrl: './features/login/loginTmpl.html',
-            controller: 'userCtrl as user',
-        })
+angular.module('journalize', ['ui.router'])
 
-        .state('user', {
-            url: '/user/:id',
-            templateUrl: './features/user/userTmpl.html',
-            controller: 'userCtrl as user',
-        })
+    .config(function ($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider
-        .otherwise('/');
+        $stateProvider
+            .state('login', {
+                url: '/',
+                templateUrl: './features/login/loginTmpl.html',
+                controller: 'userCtrl as user',
+            })
+
+            .state('user', {
+                url: '/user/:id',
+                templateUrl: './features/user/userTmpl.html',
+                controller: 'userCtrl as user',
+            })
+
+        $urlRouterProvider
+            .otherwise('/');
 
 
-});
+    })
+
+    .constant("BASE_URL", baseUrl);
 

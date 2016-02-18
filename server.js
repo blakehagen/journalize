@@ -14,6 +14,8 @@ app.use(passport.session());
 
 // ROUTES //
 require('./server/features/auth/auth.server.routes')(app, passport);
+require('./server/features/users/user.server.routes')(app);
+
 
 
 
