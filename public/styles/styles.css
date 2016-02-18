@@ -14,6 +14,10 @@ body {
     width: 100%;
 }
 
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
 /* LANDING PAGE / LOGIN */
 
 .landing-background {
@@ -255,7 +259,7 @@ body {
 .dashboard {
     /*border: 1px solid red;*/
     background: #adddcf;
-    height: 100px;
+    height: 110px;
     width: 100%;
     display: flex;
 }
@@ -272,12 +276,12 @@ body {
 
     .user-img img {
         height: 85px;
-        border: 1px solid #DFEEF3;
+        border: 1px solid #FFF;
         border-radius: 50%;
     }
     
 .user-info {
-    margin-left: 30px;
+    margin-left: 20px;
     /*border: 1px solid blue;*/
     display: flex;
     flex-flow: column;
@@ -295,7 +299,6 @@ body {
         font-family: 'Nothing You Could Do', 'Open Sans', sans-serif;
         color: #FFF;
         font-size: 34px;
-        font-weight: 100;
         margin: 0;
 
     }
@@ -303,7 +306,16 @@ body {
     .user-info p {
         font-family: 'Open Sans', sans-serif;
         color: #FFF;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 400;
         margin: 0;
+        display: flex;
+        align-items: center;
     }
+    
+.fa-sign-out {
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    color: #FFF;
+}
