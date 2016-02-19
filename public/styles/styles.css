@@ -14,6 +14,10 @@ body {
     width: 100%;
 }
 
+a {
+    z-index: 9999999;
+}
+
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
@@ -44,7 +48,7 @@ header {
         cursor: pointer;
     }
     
-    header .btn:hover{
+    header .btn:hover {
         box-shadow: inset 0 0 2px #FFF;
         border: 2px solid #FFF;
     }
@@ -236,7 +240,7 @@ header {
 
 .landing-wrap-parallax {
     height: 100vh;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     overflow-y: auto;
     perspective: 1px;
     -webkit-perspective: 1px;
@@ -288,7 +292,7 @@ header {
         justify-content: center;
         align-items: center;
     }
-    
+
     /* * * * * * * ** * * * * * * * */
     
 /* USER HOME */
@@ -298,6 +302,7 @@ header {
     height: 110px;
     width: 100%;
     display: flex;
+    position: relative;
 }
 
 .user-img {
@@ -305,7 +310,6 @@ header {
     margin-left: 20px;
     display: flex;
     align-items: center;
-
 }
 
     .user-img img {
@@ -341,14 +345,16 @@ header {
         color: #FFF;
         font-size: 15px;
         font-weight: 400;
-        margin: 0;
+        margin: -6px 0 0 0 ;
         display: flex;
         align-items: center;
+        /*border: 1px solid red;*/
     }
     
-.fa-sign-out {
+.fa-modx {
     font-size: 20px;
     font-weight: 100;
     cursor: pointer;
     color: #FFF;
+    margin-left: 18px;
 }

@@ -8,7 +8,7 @@ angular.module('journalize', ['ui.router'])
             .state('login', {
                 url: '/',
                 templateUrl: './features/login/loginTmpl.html',
-                controller: 'userCtrl as user',
+                controller: 'loginCtrl',
             })
 
             .state('user', {
@@ -23,5 +23,5 @@ angular.module('journalize', ['ui.router'])
 
     })
 
-    .constant("BASE_URL", baseUrl);
+    .constant("BASE_URL", baseUrl)
 

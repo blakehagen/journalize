@@ -1,19 +1,14 @@
 <div class="dashboard">
-
     <div class="user-img">
         <img ng-src="{{user.user.image}}">
     </div>
     <div class="user-info">
         <div class="row">
             <h4>Journalize</h4>
+            <a href="/auth/logout" title="Sign Out"><i class="fa fa-modx"></i></a>
         </div>
         <div class="row">
-        <p>Hi, {{user.user.name}} &nbsp;&nbsp;&nbsp;<a href="/auth/logout"><i class="fa fa-sign-out"></i></a>
-</p>
+            <p>Hi, {{user.user.name}} &nbsp;&nbsp;</p>
         </div>
-
     </div>
-
-
-
 </div>
