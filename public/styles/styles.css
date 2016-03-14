@@ -88,12 +88,12 @@ header {
     }
     
     .img-2 {
-        background: url("/assets/highway-time-lapse-compressor.jpg") no-repeat center center;
+        background: url("../assets/highway-time-lapse-compressor.jpg") no-repeat center center;
         background-size: cover;
     }
     
     .img-1 {
-        background: url("/assets/woods-trail-compressor.jpg") no-repeat center center;
+        background: url("../assets/woods-trail-compressor.jpg") no-repeat center center;
          background-size: cover;
     }
     
@@ -241,7 +241,7 @@ header {
 
 .landing-wrap-parallax {
     height: 100vh;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     overflow-y: auto;
     perspective: 1px;
     -webkit-perspective: 1px;
